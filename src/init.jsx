@@ -1,10 +1,10 @@
 import App from './pages/App'
 
-const initApp =  async () => {
+const initApp = async () => {
   return (
-   <>
-    <App />
-   </>
+    <>
+      <App />
+    </>
   )
 }
 

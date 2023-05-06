@@ -9,7 +9,7 @@ import Login from './Login.jsx';
 function App(props) {
 
   return (
-    <div className="md:container md:mx-auto bg-slate-300 h-screen">
+    <div className="md:container md:mx-auto h-screen">
       <Navbar />
       <h1 className="text-3xl font-bold underline">
         Application for fetching data.
