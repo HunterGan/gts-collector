@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import Navbar from '../components/Navbar.jsx';
 import Login from './Login.jsx';
+import Home from './Home.js';
 
 
 function App(props) {
@@ -16,7 +17,7 @@ function App(props) {
       </h1>
       <Router>
         <Routes>
-          <Route path={'/'} element={<p>Home</p>} />
+          <Route path={'/'} element={<Home />} />
           <Route path={'/login'} element={<Login />} />
           <Route path={'/send'} element={<p>Send data</p>} />
           <Route path={'/manageusers'} element={<p>Manage users</p>} />
