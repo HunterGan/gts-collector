@@ -10,11 +10,8 @@ import Home from './Home.js';
 function App(props) {
 
   return (
-    <div className="md:container md:mx-auto h-screen">
+    <div >
       <Navbar />
-      <h1 className="text-3xl font-bold underline">
-        Application for fetching data.
-      </h1>
       <Router>
         <Routes>
           <Route path={'/'} element={<Home />} />
