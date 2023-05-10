@@ -6,8 +6,8 @@ import { useState } from 'react';
 function Sidebar(props) {
  const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "Dashboard", src: "Chart_fill" },
-    { title: "Inbox", src: "Chat" },
+    { title: "Передать показания", src: "Chart_fill" },
+    { title: "Аналитика", src: "Chat" },
     { title: "Accounts", src: "User", gap: true },
     { title: "Schedule ", src: "Calendar" },
     { title: "Search", src: "Search" },
@@ -17,7 +17,7 @@ function Sidebar(props) {
   ];
 
   return (
-    <div className="flex">
+    <>
       <div
         className={` ${
           open ? "w-72" : "w-20 "
@@ -43,7 +43,7 @@ function Sidebar(props) {
               !open && "scale-0"
             }`}
           >
-            Designer
+            Панель управления
           </h1>
         </div>
         <ul className="pt-6">
@@ -63,7 +63,7 @@ function Sidebar(props) {
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 }
 

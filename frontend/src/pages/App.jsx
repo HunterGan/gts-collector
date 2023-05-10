@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import Navbar from '../components/Navbar.jsx';
 import Login from './Login.jsx';
-import Home from './Home.js';
+import MainPage from './MainPage.js';
 
 
 function App(props) {
@@ -14,7 +14,7 @@ function App(props) {
       <Navbar />
       <Router>
         <Routes>
-          <Route path={'/'} element={<Home />} />
+          <Route path={'/'} element={<MainPage />} />
           <Route path={'/login'} element={<Login />} />
           <Route path={'/send'} element={<p>Send data</p>} />
           <Route path={'/manageusers'} element={<p>Manage users</p>} />
